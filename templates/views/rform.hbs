@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <link rel="stylesheet" href="css/style.css">
+    {{>links}}
+    
+</head>
+<body>
+      <h1>Regiteratio Form</h1>
+    {{>navbar}}
+    {{>header}}
+
+    <div class="main">
+        <div class="row">
+            <div class="col-md-5">
+                <h1>welcome</h1>
+                <p>to the complete MERN backend course</p>
+                <a href="/home"><button>login</button></a>
+            </div>
+            <div class="col-md-6">
+                <h2>employe registeration form</h2>
+<form action="/register" method="post" class="mx-auto">
+    <div class="form-row mx-auto">
+        <div class="col-sm-4">
+
+<input type="text" class="form-control" placeholder="First name" name="firstname">
+
+        </div>
+        <div class="col-sm-4">
+           <input type="text" class="form-control" placeholder="Last name" name="lastname">
+
+        </div>
+
+    </div>
+    <div class="form-row">
+        <div class="col-sm-4">
+                  <label for="inputEmail4">Email</label>
+      <input type="email" class="form-control" id="inputEmail4" placeholder="Email" name="email">
+        </div>
+        <div class="col-sm-4">
+        {{!-- when i am using select from one radio input i will specify name of bothe
+        both radio gender --}}
+              <legend class="col-form-label col-sm-2 pt-0">Radios</legend>
+     <div class="form-check">
+          <input class="form-check-input" type="radio" name="gender" id="gridRadios1" value="option1" checked>
+          <label class="form-check-label" for="gridRadios1">
+            Male
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="gender" id="gridRadios2" value="option2">
+          <label class="form-check-label" for="gridRadios2">
+         Female
+          </label>
+        </div>
+    </div>
+    </div>
+    <div class="form-row">
+        <div class="col-sm-4">
+            <input type="text" class="form-control" placeholder="phone No *" name="phoneNo">
+
+        </div>
+        <div class="col-sm-4">
+            <input type="number" class="form-control" placeholder="Enter Your Age *" name="age">
+
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="col-sm-4">
+            <input type="password" class="form-control" placeholder="Password *" name="password">
+
+        </div>
+        <div class="col-sm-4">
+            <input type="password" class="form-control border-dark" placeholder="Confirm password *" name="confirmPassword">
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-6">
+        <input type="submit" class="btn btn-primary" value="submit">
+        </div>
+    </div>
+</form>   
+            </div>
+        </div>
+    </div>
+    {{>footer}}
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link rel="stylesheet" href="css/style.css">
+     <style>
+         input{
+             border:2px solid black;
+         }
+         .fstyle{
+             border:2px solid black;
+             width:50%vw;
+             height:70%vh;
+             margin:auto;
+             text-align:center;
+         }
+     </style>
+    {{>links}}
+
+</head>
+<body>
+    <h1>Login Page</h1>
+    {{>navbar}}
+    {{>header}}
+<form class="fstyle"action="/login" method="post">
+ <div class="form-group">
+     <label for="namei">Email</label>
+<input type="text" id="namei" name="email" placeholder="Username">
+
+ </div>
+<div class="form-group">
+     <label for="password">password</label>
+<input type="text" id="password" name="password" placeholder="password">
+ <input type="submit" value="signIn">
+ 
+</div>
+</form>
+
+    {{>footer}}
+</body>
+</html>

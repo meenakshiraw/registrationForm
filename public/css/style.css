@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Piazzolla:wght@200;300;400;500&display=swap');
+
+*{
+    border:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Piazzolla', serif;
+    font-size:2rem;
+}
+body{
+    
+    height:100%vh;
+  display:flex;
+  flex-direction:column;
+  height:100vh;
+
+
+}
+:root{
+    --bg-main: #341f97;
+}
+html{
+    font-size: 65.5%;
+}
+.navbar{
+background-color: #341f97;
+color:white;
+
+font-size: 2rem;
+
+}
+.navbar-brand{
+    text-transform:uppercase;
+    color:white;
+    font-size: 2rem;
+}
+.navbar-nav a{
+    text-transform:capitalize;
+    color:white;
+    font-size: 2rem;
+    margin:0 1rem 0 1rem;
+}
+footer{
+    background-color:var(--bg-main);
+  
+    color:white;
+    margin-top:auto;
+
+text-align: center;;
+font-size:2rem;
+    padding-top:1rem;
+    
+    text-transform: capitalize;
+    
+}
+.head{
+    background-color: var(--bg-main);
+    color:white;
+    text-align:center;
+    padding:2rem;
+    font-size:4rem;
+   }
+   .head h1{
+     font-size:2.5rem;  
+     text-align:center;
+     font-weight: bolder;
+     box-shadow:0 6rem 6rem 0 rgb(255, 255, 255);
+     text-transform:capitalize;
+   }
+   .mainh1{
+       margin:1rem auto;
+       padding:1rem;
+       color:blueviolet;
+       font-weight:bolder;
+       font-size: 4rem;
+       text-transform: capitalize;
+   }
+   .head p{
+       font-size:1.8rem;
+       font-style: italic;
+       color:#ff6b6b;
+       text-transform:capitalize;
+   }
+   .main p{
+    font-size:1.8rem; 
+    
+   }
+   .main h1{
+    font-size:2.5rem;  
+    text-align:center;
+    font-weight: bolder;
+    text-transform:capitalize;
+   }
+   .carousel img{
+       margin:auto;
+  
+   }
+  
